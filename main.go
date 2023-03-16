@@ -69,6 +69,7 @@ func main() {
 	}
 
 	// Delete an object.
+	fmt.Println("Successfully delete animal type of object", animal2.GetID())
 	if err := db.DeleteObject(ctx, animal2.GetID()); err != nil {
 		log.Fatalf("failed to delete object: %v", err)
 	}
